@@ -6,7 +6,7 @@ import { AskComponent } from './ask/ask.component';
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent
+    component: AskComponent
   },
   {
     path: 'ask',

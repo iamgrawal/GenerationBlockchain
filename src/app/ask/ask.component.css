@@ -1,0 +1,113 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.imagebg {
+    background-image: url('../../assets/main.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 3px solid #ff6f31;
+}
+.logo {
+    width: 20%;
+    height: auto;
+}
+.main_banner {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}
+
+.banner_content{
+    padding-top: 10%;
+}
+
+.banner_text{
+    color: #e9e9d8;
+    padding: 5% 0%;
+}
+.highlight {
+    color: #f0b617;
+}
+.search {
+  position: relative;
+  color: #aaa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+.search input {
+  width: 80%;
+  height: auto;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  margin: 0% 0% 10% 0%;
+  padding: 3% 0%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 130%;
+}
+.search input { 
+    text-align: left;
+    text-indent: 10%;    
+}
+
+.search input::-moz-placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+.search input::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+.search .fa-search { 
+  position: absolute;
+  top: 15%;
+  left: 11%;
+  font-size: 200%;
+}
+
+.search button {
+    float: right;
+    position: absolute;
+    z-index: 200;
+    width: 10%;
+    padding: 2% 0%;
+    top: 8%;
+    right: 12%;
+    background: #ff6f31;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: #ed652a;
+}
+
+.search button::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#Questions{
+    overflow-x: hidden;
+    display: inline;
+    background-color: #F1F1F1;
+}
+
+#Questions .row {
+    background-color: #F1F1F1;
+}
+
+.main{
+    overflow-x: hidden;
+}
+
+.questions_main{
+    margin:2% 1% 2% 2%;
+    border-radius: 0;
+}
+
+
+.leaderboard_main{
+    margin:2% 2% 2% 1%; 
+    border-radius: 0;
+}

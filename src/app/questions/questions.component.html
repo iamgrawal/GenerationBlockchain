@@ -1,0 +1,71 @@
+<div class="questions_header">
+  <div class="search float-left">
+    <span class="fa fa-search"></span>
+    <input type="text" name="search" placeholder="Search for existing questions..">
+  </div>
+  <div class="sort float-right" ngbDropdown>
+    <!-- <p class="sort_text">Sort By:</p> -->
+    <button type="button" class="btn btn-outline-danger button btn-sm" ngbDropdownToggle>Recent</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button class="dropdown-item">Recent</button>
+      <button class="dropdown-item">Most Commented</button>
+      <button class="dropdown-item">Most Viewed</button>
+    </div>
+  </div>
+</div>
+<hr>
+<section id="questionsData">
+<div class="questions_list">
+  <div class="questions_list_item">
+    <div class="list_item">
+      <div class="profileImage">
+        <img src="../../assets/user.png">
+      </div>
+      <div class="userPostDetail">
+        <p class="profileName">DOLOR SIT AMEN</p>
+        <p class="timePosted">48min. ago</p>
+      </div>
+    </div>
+    <div class="viewsCount float-right">
+      29 views
+    </div>
+    <div class="questionDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <hr>
+  </div>
+  <div class="questions_list">
+    <div class="list_item">
+      <div class="profileImage">
+        <img src="../../assets/user.png">
+      </div>
+      <div class="userPostDetail">
+        <p class="profileName">DOLOR SIT AMEN</p>
+        <p class="timePosted">48min. ago</p>
+      </div>
+    </div>
+    <div class="viewsCount float-right">
+      29 views
+    </div>
+    <div class="questionDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <hr>
+  </div>
+  <div class="questions_list">
+    <div class="list_item">
+      <div class="profileImage">
+        <img src="../../assets/user.png">
+      </div>
+      <div class="userPostDetail">
+        <p class="profileName">DOLOR SIT AMEN</p>
+        <p class="timePosted">48min. ago</p>
+      </div>
+    </div>
+    <div class="viewsCount float-right">
+      29 views
+    </div>
+    <div class="questionDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <hr>
+  </div>
+</div>
+<div class="loadmore">
+  <button type="button" class="btn btn-outline-danger loadMoreButton btn-sm">Load More...</button>
+</div>
+</section>
