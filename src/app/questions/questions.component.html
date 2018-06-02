@@ -3,14 +3,12 @@
     <span class="fa fa-search"></span>
     <input type="text" name="search" placeholder="Search for existing questions..">
   </div>
-  <div class="sort float-right" ngbDropdown>
+  <div class="sort float-right">
     <!-- <p class="sort_text">Sort By:</p> -->
-    <button type="button" class="btn btn-outline-danger button btn-sm" ngbDropdownToggle>Recent</button>
-    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-      <button class="dropdown-item">Recent</button>
-      <button class="dropdown-item">Most Commented</button>
-      <button class="dropdown-item">Most Viewed</button>
-    </div>
+    <select type="button" class="btn btn-outline-danger button btn-sm"[(value)]=valueSelected (change)="onSelect($event.target.value)"> 
+      <option class="dropdown-item" value="date">Recent</option>
+      <option class="dropdown-item" value="views">Most Viewed</option>
+    </select>
   </div>
 </div>
 <hr>
