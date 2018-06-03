@@ -17,8 +17,8 @@
             </div>
             <div class="search">
               <span class="fa fa-search"></span>
-              <input placeholder="What's your question?">
-              <button type="submit">Ask</button>
+              <input placeholder="What's your question?"  #query (keyup.enter)="onSubmit(query)">
+              <button type="submit" (click)="onSubmit(query)">Ask</button>
             </div>
           </div>
         </div>

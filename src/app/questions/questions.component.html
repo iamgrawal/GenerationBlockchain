@@ -1,7 +1,7 @@
 <div class="questions_header">
   <div class="search float-left">
-    <span class="fa fa-search"></span>
-    <input type="text" name="search" placeholder="Search for existing questions..">
+      <span class="fa fa-search"></span>
+      <input type="text" name="search" #query (keyup.enter)="onSubmit(query)" placeholder="Search for existing questions..">
   </div>
   <div class="sort float-right">
     <!-- <p class="sort_text">Sort By:</p> -->
@@ -13,53 +13,21 @@
 </div>
 <hr>
 <section id="questionsData">
-<div class="questions_list">
+<div class="questions_list" *ngFor="let data of datasource">
   <div class="questions_list_item">
     <div class="list_item">
       <div class="profileImage">
         <img src="../../assets/user.png">
       </div>
       <div class="userPostDetail">
-        <p class="profileName">DOLOR SIT AMEN</p>
-        <p class="timePosted">48min. ago</p>
+        <p class="profileName">{{data.username}}</p>
+        <p class="timePosted">{{data.date}}</p>
       </div>
     </div>
     <div class="viewsCount float-right">
-      29 views
+      {{data.views}}
     </div>
-    <div class="questionDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-    <hr>
-  </div>
-  <div class="questions_list">
-    <div class="list_item">
-      <div class="profileImage">
-        <img src="../../assets/user.png">
-      </div>
-      <div class="userPostDetail">
-        <p class="profileName">DOLOR SIT AMEN</p>
-        <p class="timePosted">48min. ago</p>
-      </div>
-    </div>
-    <div class="viewsCount float-right">
-      29 views
-    </div>
-    <div class="questionDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-    <hr>
-  </div>
-  <div class="questions_list">
-    <div class="list_item">
-      <div class="profileImage">
-        <img src="../../assets/user.png">
-      </div>
-      <div class="userPostDetail">
-        <p class="profileName">DOLOR SIT AMEN</p>
-        <p class="timePosted">48min. ago</p>
-      </div>
-    </div>
-    <div class="viewsCount float-right">
-      29 views
-    </div>
-    <div class="questionDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="questionDetail">{{data.question}}</div>
     <hr>
   </div>
 </div>
