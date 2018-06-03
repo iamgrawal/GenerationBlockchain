@@ -20,7 +20,7 @@ export class QuestionsComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.post<CollectionDataStructure>('http://localhost:3000/questions/getInitialData', { }).subscribe(
+    this.http.post<CollectionDataStructure>('https://generation-blockchain.herokuapp.com/questions/getInitialData', { }).subscribe(
       data => {
         this.datasource = data.message;
       }
@@ -33,7 +33,7 @@ export class QuestionsComponent implements OnInit {
   }
 
   getSortedData(sortBy) {
-    this.http.post<SortedDataStructure>('http://localhost:3000/questions/sort', {
+    this.http.post<SortedDataStructure>('https://generation-blockchain.herokuapp.com/questions/sort', {
       'field': this.valueSelected
     }
   ).subscribe(data => {
@@ -43,7 +43,7 @@ export class QuestionsComponent implements OnInit {
   }
 
   onSubmit(query) {
-    this.http.post<CollectionDataStructure>('http://localhost:3000/questions/search', {
+    this.http.post<CollectionDataStructure>('https://generation-blockchain.herokuapp.com/questions/search', {
       'query': query.value
     }).subscribe(data => {
       this.datasource = [];

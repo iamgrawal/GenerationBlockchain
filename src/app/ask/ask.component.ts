@@ -19,7 +19,7 @@ export class AskComponent implements OnInit {
   }
 
   onSubmit(query) {
-    this.http.post<CollectionDataStructure>('http://localhost:3000/questions/search', {
+    this.http.post<CollectionDataStructure>('https://generation-blockchain.herokuapp.com/questions/search', {
       'query': query.value
     }).subscribe(data => {
       this.datasource = [];

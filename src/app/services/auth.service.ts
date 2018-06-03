@@ -13,7 +13,7 @@ export class AuthService {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     return this.http
-      .post('http://localhost:3000/users/register', user, { headers: headers })
+      .post('/users/register', user, { headers: headers })
       .subscribe(res => res.json());
   }
 
@@ -21,7 +21,7 @@ export class AuthService {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     return this.http
-      .post('users/authenticate', user, { headers: headers })
+      .post('https://generation-blockchain.herokuapp.com/users/authenticate', user, { headers: headers })
       .subscribe(res => res.json());
   }
 

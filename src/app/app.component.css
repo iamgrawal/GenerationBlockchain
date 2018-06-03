@@ -1,0 +1,14 @@
+.main{
+    overflow-x: hidden;
+}
+
+.questions_main{
+    margin:2% 1% 2% 2%;
+    border-radius: 0;
+}
+
+
+.leaderboard_main{
+    margin:2% 2% 2% 1%; 
+    border-radius: 0;
+}
