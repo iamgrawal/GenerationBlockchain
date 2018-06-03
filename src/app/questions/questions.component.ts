@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class QuestionsComponent implements OnInit {
 
   public searchQuery: String;
-  public valueSelected = 'date';
+  public valueSelected = 'createdOn';
   public datasource: DataSource[];
 
   public sortValues: SortValues[] = [

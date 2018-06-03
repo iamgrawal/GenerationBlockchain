@@ -111,3 +111,8 @@
     margin:2% 2% 2% 1%; 
     border-radius: 0;
 }
+
+.backdrop-color{
+    background-color: #171F22;
+    background: #171F22;
+}

@@ -5,8 +5,8 @@
   </div>
   <div class="sort float-right">
     <!-- <p class="sort_text">Sort By:</p> -->
-    <select type="button" class="btn btn-outline-danger button btn-sm"[(value)]=valueSelected (change)="onSelect($event.target.value)"> 
-      <option class="dropdown-item" value="date">Recent</option>
+    <select type="button" class="btn btn-outline-danger button btn-sm" [(value)]=valueSelected (change)="onSelect($event.target.value)"> 
+      <option class="dropdown-item" value="createdOn">Recent</option>
       <option class="dropdown-item" value="views">Most Viewed</option>
     </select>
   </div>
